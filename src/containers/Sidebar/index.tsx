@@ -1,9 +1,22 @@
+import Avatar from '../../components/Avatar'
+import Paragraph from '../../components/Paragraph'
 import Title from '../../components/Title'
+
+import { Description, Button, SidebarContainer } from './styles'
 
 const Sidebar = () => (
   <aside>
-    <img src="https://github.com/algayer-code.png" />
-    <Title fontSize={20}>João Vitor Algayer Barbosa</Title>
+    <SidebarContainer>
+      <Avatar />
+      <Title fontSize={20}>João Vitor Algayer Barbosa</Title>
+      <Paragraph type="secondary" fontSize={16}>
+        algayer-code
+      </Paragraph>
+      <Description type="principal" fontSize={12}>
+        Engenherio Full Stack
+      </Description>
+      <Button>Trocar tema</Button>
+    </SidebarContainer>
   </aside>
 )
 
